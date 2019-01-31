@@ -7,6 +7,17 @@ MVVM + Repository + Offline support + Android Architecture Components
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+
+#### 1. Clone the repository by running the cammand below	
+```
+git clone https://github.com/HaoCSE/stackoverflowuser.git
+```
+
+#### 2. Import the project in AndroidStudio
+1.  In Android Studio, go to File -> New -> Import project
+2.  Follow the dialog wizard to choose the folder where you cloned the project and click on open.
+3.  Android studio imports the projects and builds it for you.
+
 ### Prerequisites
 *   Android Studio 3.2 stable
 *   Java JDK
