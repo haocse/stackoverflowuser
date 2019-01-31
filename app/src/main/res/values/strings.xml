@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Coding Testing</string>
+    <string name="action_retry">Retry</string>
+    <string name="user_backdrop_content_description">User backdropPath</string>
+    <string name="user_profile">User Profile</string>
+    <string name="label_overview">Overview</string>
+    <string name="release_date">Release date</string>
+    <string name="label_votes">%s votes</string>
+    <string name="action_bookmark">Add to bookmarks</string>
+    <string name="action_remove_from_bookmarks">Delete from bookmarks</string>
+    <string name="user_added_successfully">User added to your bookmarks successfully</string>
+    <string name="user_removed_successfully">User removed from your bookmarks successfully</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="play_icon">Play icon</string>
+    <string name="language">Language</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bottom_navigation_border">Bottom navigation border</string>
+    <string name="no_bookmarks">How to bookmark: Click the heart at the top-right corner of the screen in any user!</string>
+    <string name="users">users</string>
+    <string name="title">Discover</string>
+    <string name="discover">Discover</string>
+</resources>

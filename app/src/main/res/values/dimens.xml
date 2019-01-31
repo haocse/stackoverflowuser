@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Users items-->
+    <dimen name="item_offset">3dp</dimen>
+    <integer name="span_count">3</integer>
+    <integer name="reputation_span_count">1</integer>
+</resources>
