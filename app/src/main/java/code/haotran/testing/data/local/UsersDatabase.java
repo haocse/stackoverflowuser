@@ -17,7 +17,7 @@ import code.haotran.testing.data.local.model.User;
  */
 @Database(
         entities = {User.class},
-        version = 3,
+        version = 4,
         exportSchema = false)
 public abstract class UsersDatabase extends RoomDatabase {
 

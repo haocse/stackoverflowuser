@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Coding Testing</string>
+    <string name="app_name">SOF User</string>
     <string name="action_retry">Retry</string>
     <string name="user_backdrop_content_description">User backdropPath</string>
     <string name="user_profile">User Profile</string>
@@ -15,7 +15,7 @@
     <string name="language">Language</string>
     <string name="bookmarks">Bookmarks</string>
     <string name="bottom_navigation_border">Bottom navigation border</string>
-    <string name="no_bookmarks">How to bookmark: Click the heart at the top-right corner of the screen in any user!</string>
+    <string name="no_bookmarks">How to bookmark: Click the heart at the top-right corner of the user\'s screen!</string>
     <string name="users">users</string>
     <string name="title">Discover</string>
     <string name="discover">Discover</string>

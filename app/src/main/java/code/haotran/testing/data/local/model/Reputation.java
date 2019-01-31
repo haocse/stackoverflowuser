@@ -13,7 +13,10 @@ public class Reputation {
     private String reputationType;
 
     @SerializedName("creation_date")
-    private String creationDate;
+    private long creationDate;
+
+    @SerializedName("reputation_change")
+    private String reputationChange;
 
     public long getId() {
         return id;
@@ -39,11 +42,19 @@ public class Reputation {
         this.reputationType = reputationType;
     }
 
-    public String getCreationDate() {
+    public long getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(String creationDate) {
+    public void setCreationDate(long creationDate) {
         this.creationDate = creationDate;
+    }
+
+    public String getReputationChange() {
+        return reputationChange;
+    }
+
+    public void setReputationChange(String reputationChange) {
+        this.reputationChange = reputationChange;
     }
 }

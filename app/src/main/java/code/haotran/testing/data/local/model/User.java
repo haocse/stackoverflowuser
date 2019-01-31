@@ -35,6 +35,14 @@ public class User {
     @SerializedName("location")
     private String location;
 
+    @ColumnInfo(name = "reputation")
+    @SerializedName("reputation")
+    private String reputation;
+
+    @ColumnInfo(name = "last_access_date")
+    @SerializedName("last_access_date")
+    private long lastAccessDate;
+
     @ColumnInfo(name = "is_bookmarked")
     private boolean isBookMarked;
 
@@ -77,6 +85,22 @@ public class User {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getReputation() {
+        return reputation;
+    }
+
+    public void setReputation(String reputation) {
+        this.reputation = reputation;
+    }
+
+    public long getLastAccessDate() {
+        return lastAccessDate;
+    }
+
+    public void setLastAccessDate(long lastAccessDate) {
+        this.lastAccessDate = lastAccessDate;
     }
 
     @Override

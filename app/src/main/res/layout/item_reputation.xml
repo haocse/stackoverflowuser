@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="reputation"
             type="code.haotran.testing.data.local.model.Reputation" />
@@ -23,41 +22,77 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:layout_constraintBottom_toBottomOf="parent">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/text_title"
+                    android:id="@+id/post_id"
                     android:layout_width="wrap_content"
-                    android:layout_height="52dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
                     android:maxLines="2"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="@{reputation.reputationType}"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@{`Id: ` + String.valueOf(reputation.id)}"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/date"
+                    tools:text="Bean Hummus with Eggplant &amp; Pine Nuts ean Hummus with Eggplant &amp; Pine Nuts" />
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@{`Reputation Type: ` + reputation.reputationType}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/post_id"
+                    tools:text="Bean Hummus with Eggplant &amp; Pine Nuts ean Hummus with Eggplant &amp; Pine Nuts" />
+
+                <TextView
+                    android:id="@+id/reputation_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@{`Reputation Change: ` + reputation.reputationChange}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_title"
                     tools:text="Bean Hummus with Eggplant &amp; Pine Nuts ean Hummus with Eggplant &amp; Pine Nuts" />
 
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@{reputation.creationDate}"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:setDate="@{reputation.creationDate}"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/text_title"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/reputation_change"
+                    tools:text="Bean Hummus with Eggplant &amp; Pine Nuts ean Hummus with Eggplant &amp; Pine Nuts" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
